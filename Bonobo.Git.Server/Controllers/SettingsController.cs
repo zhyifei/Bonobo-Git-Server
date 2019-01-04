@@ -33,6 +33,7 @@ namespace Bonobo.Git.Server.Controllers
                 IsCommitAuthorAvatarVisible = UserConfiguration.Current.IsCommitAuthorAvatarVisible,
                 LinksRegex = UserConfiguration.Current.LinksRegex,
                 LinksUrl = UserConfiguration.Current.LinksUrl,
+                ExternalPort=UserConfiguration.Current.ExternalPort
             });
         }
 
