@@ -67,6 +67,7 @@ namespace Bonobo.Git.Server.Controllers
                         UserConfiguration.Current.IsCommitAuthorAvatarVisible = model.IsCommitAuthorAvatarVisible;
                         UserConfiguration.Current.LinksRegex = model.LinksRegex;
                         UserConfiguration.Current.LinksUrl = model.LinksUrl;
+                        UserConfiguration.Current.ExternalPort = model.ExternalPort;
                         UserConfiguration.Current.Save();
 
                         this.Session["Culture"] = new CultureInfo(model.DefaultLanguage);

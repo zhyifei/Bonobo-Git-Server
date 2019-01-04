@@ -52,5 +52,8 @@ namespace Bonobo.Git.Server.Models
         [IsValidRegex]
         [Display(ResourceType = typeof(Resources), Name = "Settings_Global_LinksRegex")]
         public string LinksRegex { get; set; }
+
+        [Display(ResourceType = typeof(Resources), Name = "Settings_Global_ExternalPort")]
+        public string ExternalPort { get; set; }
     }
 }

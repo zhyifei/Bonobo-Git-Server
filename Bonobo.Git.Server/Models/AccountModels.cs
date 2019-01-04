@@ -40,6 +40,12 @@ namespace Bonobo.Git.Server.Models
             get
             {
                 var compositeName = String.Format("{0} {1}", GivenName, Surname).Trim();
+                var culture = CultureInfo.CurrentCulture;
+                if (culture != null && culture.Name.StartsWith("zh"))
+                {
+                    compositeName = string.Format($"{Surname}{GivenName}").Trim();
+                }
+
                 if (String.IsNullOrEmpty(compositeName))
                 {
                     // Return the username if we don't have a GivenName or Surname

@@ -858,4 +858,7 @@
   <data name="Repository_Detail_RemoveLogo" xml:space="preserve">
     <value>Fjern logo</value>
   </data>
+  <data name="Settings_Global_ExternalPort" xml:space="preserve">
+    <value>Ekstern port</value>
+  </data>
 </root>

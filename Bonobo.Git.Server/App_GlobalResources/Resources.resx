@@ -957,4 +957,10 @@ The regular C# string formatting rules apply: To get {} in your link you need to
   <data name="Settings_Global_SiteCssUrl_Hint" xml:space="preserve">
     <value>URL to a CSS file to use for the site.  Site-relative (~) paths are supported.</value>
   </data>
+  <data name="Home_Download_Title" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Settings_Global_ExternalPort" xml:space="preserve">
+    <value>External Port</value>
+  </data>
 </root>

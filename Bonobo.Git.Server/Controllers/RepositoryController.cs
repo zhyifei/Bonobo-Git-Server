@@ -237,11 +237,16 @@ namespace Bonobo.Git.Server.Controllers
         /// </summary>
         void SetGitUrls(RepositoryDetailModel model)
         {
+            var port = Request.Url.Port;
+            if(!string.IsNullOrWhiteSpace(UserConfiguration.Current.ExternalPort))
+            {
+                port = int.Parse(UserConfiguration.Current.ExternalPort);
+            }
             string serverAddress = System.Configuration.ConfigurationManager.AppSettings["GitServerPath"]
                                    ?? string.Format("{0}://{1}{2}{3}/",
                                        Request.Url.Scheme,
                                        Request.Url.Host,
-                                       (Request.Url.IsDefaultPort ? "" : (":" + Request.Url.Port)),
+                                       (Request.Url.IsDefaultPort ? "" : (":" + port)),
                                        Request.ApplicationPath == "/" ? "" : Request.ApplicationPath
                                        );
 

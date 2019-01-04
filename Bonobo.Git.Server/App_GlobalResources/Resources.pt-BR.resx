@@ -944,4 +944,7 @@ As regras regulares de formatação de string C# se aplicam: Para obter {} no se
   <data name="Home_About_Title" xml:space="preserve">
     <value>Sobre</value>
   </data>
+  <data name="Settings_Global_ExternalPort" xml:space="preserve">
+    <value>Porta externa</value>
+  </data>
 </root>

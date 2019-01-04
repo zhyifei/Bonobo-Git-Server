@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
 using System.Security.Principal;
+using System.Web;
 using Serilog;
 
 namespace Bonobo.Git.Server
@@ -68,6 +70,12 @@ namespace Bonobo.Git.Server
 
         public static string DisplayName(this IPrincipal user)
         {
+            var culture = CultureInfo.CurrentCulture;// (CultureInfo)HttpContext.Current.Session["Culture"];
+
+            if (culture != null && culture.Name.StartsWith("zh"))
+            {
+                return string.Format($"{user.GetClaimValue(ClaimTypes.Surname)}{user.GetClaimValue(ClaimTypes.GivenName)}").Trim();
+            }
             return string.Format("{0} {1}", user.GetClaimValue(ClaimTypes.GivenName), user.GetClaimValue(ClaimTypes.Surname));
         }
 

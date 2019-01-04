@@ -54,6 +54,11 @@ namespace Bonobo.Git.Server.Controllers
             return View();
         }
 
+        public ActionResult Download()
+        {
+            return View();
+        }
+
         private string CheckForPasswordResetUsername(string digest)
         {
             var cacheObj = MvcApplication.Cache[HttpUtility.UrlDecode(digest)];

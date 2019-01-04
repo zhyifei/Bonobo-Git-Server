@@ -953,4 +953,7 @@ Bonobo Git Sunucusu bir kaç açık kaynak ve ücretsiz projeyi kullanmaktadır.
   <data name="Repository_Edit_InvalidAnonymousPushMode" xml:space="preserve">
     <value>Geçersiz değer sağlandı.</value>
   </data>
+  <data name="Settings_Global_ExternalPort" xml:space="preserve">
+    <value>Dış liman</value>
+  </data>
 </root>

@@ -870,4 +870,7 @@
   <data name="Settings_Global_LinksUrl" xml:space="preserve">
     <value>リンクURL</value>
   </data>
+  <data name="Settings_Global_ExternalPort" xml:space="preserve">
+    <value>外部ポート</value>
+  </data>
 </root>

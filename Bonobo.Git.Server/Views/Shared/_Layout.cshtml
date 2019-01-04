@@ -54,6 +54,7 @@
                             <li><a href="@Url.Action("Create", "Account")"><i class="fa fa-pencil"></i> @Resources.Layout_Register</a></li>
                         }
                     }
+                    <li><a href="@Url.Action("Download", "Home")" class="teams"><i class="fa fa-group"></i>@Resources.Home_Download_Title</a></li>
                 </ul>
             </div>
         </div>
@@ -69,9 +70,9 @@
                     @UserConfiguration.Current.SiteFooterMessage
                     @:&middot;
                 }
-                Bonobo Git Server (@Html.AssemblyVersion()) &copy; 2015 <a href="http://www.chodounsky.net">Jakub Chodounský</a>
-                &middot; <a href="http://bonobogitserver.com/">@Resources.Home</a> 
-                &middot; <a href="https://github.com/jakubgarfield/Bonobo-Git-Server">@Resources.Source</a>
+                企钧 Git Server (@Html.AssemblyVersion()) &copy; 2018 <a href="http://qijuntec.com/">qijuntec.com/</a>
+                &middot; <a href="http://qijuntec.com/">@Resources.Home</a>
+                &middot;@Html.ActionLink(UserConfiguration.Current.GetSiteTitle(), "", "", null, new { @class = "pure-menu-heading" })
             </p>
         </div>
     </div>

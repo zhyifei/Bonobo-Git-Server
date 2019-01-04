@@ -768,4 +768,7 @@
   <data name="Validation_StringLength" xml:space="preserve">
     <value>"{0}" powinno być krótsze niż {1} znaków.</value>
   </data>
+  <data name="Settings_Global_ExternalPort" xml:space="preserve">
+    <value>Port zewnętrzny</value>
+  </data>
 </root>

@@ -27,6 +27,8 @@ namespace Bonobo.Git.Server.Configuration
         public string LinksRegex { get; set; }
         public string LinksUrl { get; set; }
 
+        public string ExternalPort { get; set; }
+
         public string Repositories
         {
             get

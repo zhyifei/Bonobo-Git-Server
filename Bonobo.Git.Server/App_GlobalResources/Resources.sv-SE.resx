@@ -705,4 +705,7 @@
   <data name="Validation_FileName_Regex" xml:space="preserve">
     <value>Enbart bokstäver, siffror, bindestreck och understreck är tillåtet för "{0}".</value>
   </data>
+  <data name="Settings_Global_ExternalPort" xml:space="preserve">
+    <value>Extern port</value>
+  </data>
 </root>

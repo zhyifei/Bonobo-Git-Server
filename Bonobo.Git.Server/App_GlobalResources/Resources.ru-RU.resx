@@ -953,4 +953,7 @@
   <data name="Home_About_Title" xml:space="preserve">
     <value>О программе</value>
   </data>
+  <data name="Settings_Global_ExternalPort" xml:space="preserve">
+    <value>Внешний порт</value>
+  </data>
 </root>

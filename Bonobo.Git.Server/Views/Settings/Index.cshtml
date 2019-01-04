@@ -48,7 +48,7 @@
         </div>
         <div class="pure-control-group">
             @Html.LabelFor(m => m.DefaultLanguage)
-            @Html.DropDownListFor(m => m.DefaultLanguage, 
+            @Html.DropDownListFor(m => m.DefaultLanguage,
                 CultureInfo.GetCultures(CultureTypes.SpecificCultures).Select(
                     cultureInfo => new SelectListItem() {
                         Text = String.Format("{0} - {1}", cultureInfo.Name, cultureInfo.DisplayName),
@@ -58,8 +58,8 @@
             <i class="fa fa-info-circle" title="@Resources.Settings_Global_DefaultLanguage_Hint"></i>
         </div>
         <div class="pure-controls">
-            <label for="AllowAnonymousRegistration" class="pure-checkbox">@Html.CheckBoxFor(m => m.AllowAnonymousRegistration) @Model.GetType().GetDisplayValue("AllowAnonymousRegistration") <i class="fa fa-info-circle" title="@Resources.Settings_Global_AllowAnonymousRegistration_Hint"></i></label>  
-            <label for="AllowUserRepositoryCreation" class="pure-checkbox">@Html.CheckBoxFor(m => m.AllowUserRepositoryCreation) @Model.GetType().GetDisplayValue("AllowUserRepositoryCreation") <i class="fa fa-info-circle" title="@Resources.Settings_Global_AllowUserRepositoryCreation_Hint"></i></label>            
+            <label for="AllowAnonymousRegistration" class="pure-checkbox">@Html.CheckBoxFor(m => m.AllowAnonymousRegistration) @Model.GetType().GetDisplayValue("AllowAnonymousRegistration") <i class="fa fa-info-circle" title="@Resources.Settings_Global_AllowAnonymousRegistration_Hint"></i></label>
+            <label for="AllowUserRepositoryCreation" class="pure-checkbox">@Html.CheckBoxFor(m => m.AllowUserRepositoryCreation) @Model.GetType().GetDisplayValue("AllowUserRepositoryCreation") <i class="fa fa-info-circle" title="@Resources.Settings_Global_AllowUserRepositoryCreation_Hint"></i></label>
             <label for="AllowPushToCreate" class="pure-checkbox">@Html.CheckBoxFor(m => m.AllowPushToCreate) @Model.GetType().GetDisplayValue("AllowPushToCreate") <i class="fa fa-info-circle" title="@Resources.Settings_Global_AllowPushToCreate_Hint"></i></label>
             <label for="AllowAnonymousPush" class="pure-checkbox">@Html.CheckBoxFor(m => m.AllowAnonymousPush) @Model.GetType().GetDisplayValue("AllowAnonymousPush")</label>
             <label for="IsCommitAuthorAvatarVisible" class="pure-checkbox">@Html.CheckBoxFor(m => m.IsCommitAuthorAvatarVisible) @Model.GetType().GetDisplayValue("IsCommitAuthorAvatarVisible")</label>
@@ -73,6 +73,10 @@
             @Html.LabelFor(m => m.LinksUrl)
             @Html.TextBoxFor(m => m.LinksUrl, new { @class = "medium", autofocus = "" })
             <i class="fa fa-info-circle" title="@Resources.Settings_Global_LinksUrl_Hint"></i>
+        </div>
+        <div class="pure-control-group">
+            @Html.LabelFor(m => m.ExternalPort)
+            @Html.TextBoxFor(m => m.ExternalPort, new { @class = "medium", autofocus = "" })
         </div>
         <div class="pure-controls">
             <button type="submit" class="pure-button pure-button-primary"><i class="fa fa-save"></i> @Resources.Settings_Index_Save</button>

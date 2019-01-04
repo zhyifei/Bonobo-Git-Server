@@ -702,4 +702,10 @@
   <data name="Validation_FileName_Regex" xml:space="preserve">
     <value>只有英文字，數字，減號和底線允許用於 "{0}"</value>
   </data>
+  <data name="Home_Download_Title" xml:space="preserve">
+    <value>下載</value>
+  </data>
+  <data name="Settings_Global_ExternalPort" xml:space="preserve">
+    <value>外部端口</value>
+  </data>
 </root>

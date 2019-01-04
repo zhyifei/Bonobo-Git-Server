@@ -774,4 +774,7 @@
   <data name="Repository_AllowAnonymousPushHint" xml:space="preserve">
     <value>Permitir a usuarios anónimos hacer push a este repositorio si tiene acceso anónimo permitido. Si se selecciona "Global" se utilizará la opción de la configuración global.</value>
   </data>
+  <data name="Settings_Global_ExternalPort" xml:space="preserve">
+    <value>Puerto externo</value>
+  </data>
 </root>
